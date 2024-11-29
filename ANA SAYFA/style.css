@@ -1,0 +1,788 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+}
+/* menu start */
+header {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: -10em;
+  background-color: rgb(176, 125, 224);
+  width: 35%;
+  height: 4em;
+  position: fixed;
+  margin-left: 33em;
+}
+
+header nav {
+  padding: 1.6em;
+  padding-top: 1.8em;
+  margin-left: -0.5em;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
+}
+
+header nav ul li {
+  list-style: none;
+  margin: 0 1em;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); /* Başlangıç noktası */
+  }
+  100% {
+    transform: rotate(360deg); /* 360 derece döner */
+  }
+}
+/* menu end */
+
+/* home start */
+.homess {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10em;
+}
+
+.homess .ilk-kisim {
+  align-items: center;
+  text-align: left;
+  justify-content: center;
+  margin-left: 10em;
+  color: rgb(0, 0, 0);
+}
+
+.homess .ilk-kisim .baslik {
+  margin-top: 5em;
+}
+
+.homess .ilk-kisim .baslik h1 {
+  font-size: 70px;
+}
+
+.homess .ilk-kisim .about-kisa p {
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.homess .ikinci-kisim-img img {
+  width: 700px;
+  height: 400px;
+  margin-right: 10em;
+  border-radius: 5px;
+}
+/* home end */
+
+/* abouts start */
+.abouts {
+  align-items: center;
+  text-align: left;
+  justify-content: center;
+  margin-top: 7.5em;
+  margin-left: 5em;
+  margin-bottom: 2em;
+}
+
+.abouts h1 {
+  font-size: 60px;
+  margin-left: 8em;
+  margin-bottom: 1em;
+}
+
+.abouts .birlestirme {
+  display: flex;
+}
+
+.abouts .birlestirme p {
+  font-size: 17px;
+  font-style: italic;
+  font-weight: bold;
+  margin-left: -2em;
+}
+
+.abouts .birlestirme .abouts-img {
+  margin-left: 2em;
+  width: 720px;
+  height: 500px;
+}
+/* abouts end */
+
+/* abillities start */
+.abilitiess {
+  margin-top: 7em;
+}
+
+.abilitiess h1 {
+  font-size: 60px;
+  margin-left: 8em;
+  margin-bottom: 1em;
+}
+
+.abilitiess .aciklama {
+  margin-left: 10em;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+}
+/* abillities frontend  start */
+.abilitiess .frontend {
+  margin-top: 3em;
+}
+
+.abilitiess .frontend .br-r {
+  display: flex;
+}
+
+.abilitiess .frontend h2 {
+  font-size: 30px;
+  margin-left: 3em;
+  margin-bottom: 1em;
+}
+
+.abilitiess .frontend .ilk-bolum {
+  overflow-wrap: break-word; /* Modern tarayıcılar için */
+  margin-left: -3em;
+}
+
+.abilitiess .frontend .ilk-bolum h3 {
+  font-size: 25px;
+  margin-left: 4.5em;
+  margin-bottom: 1em;
+}
+
+.abilitiess .frontend .ilk-bolum .icon1 {
+  width: 200px;
+  height: 200px;
+  margin-left: 8em;
+  margin-bottom: 1em;
+}
+
+.abilitiess .frontend .ilk-bolum li {
+  margin-left: 4em;
+  font-weight: bold;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.abilitiess .frontend .ikinci-bolum {
+  overflow-wrap: break-word; /* Modern tarayıcılar için */
+}
+
+.abilitiess .frontend .ikinci-bolum h3 {
+  font-size: 25px;
+  margin-left: 3em;
+  margin-bottom: 1em;
+}
+
+.abilitiess .frontend .ikinci-bolum .icon2 {
+  width: 280px;
+  height: 200px;
+  margin-left: 4em;
+  margin-bottom: 1em;
+}
+
+.abilitiess .frontend .ikinci-bolum li {
+  margin-left: 4em;
+  font-weight: bold;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.abilitiess .frontend .ucuncu-bolum {
+  overflow-wrap: break-word; /* Modern tarayıcılar için */
+}
+
+.abilitiess .frontend .ucuncu-bolum h3 {
+  font-size: 25px;
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+.abilitiess .frontend .ucuncu-bolum .icon3 {
+  width: 280px;
+  height: 200px;
+  margin-left: 2em;
+  margin-bottom: 1em;
+}
+
+.abilitiess .frontend .ucuncu-bolum li {
+  margin-left: 4em;
+  font-weight: bold;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.abilitiess .frontend .dorduncu-bolum {
+  overflow-wrap: break-word; /* Modern tarayıcılar için */
+}
+
+.abilitiess .frontend .dorduncu-bolum h3 {
+  font-size: 25px;
+  margin-left: 3em;
+  margin-bottom: 1em;
+}
+
+.abilitiess .frontend .dorduncu-bolum .icon4 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-left: 6.9em;
+  margin-bottom: 1em;
+}
+
+.abilitiess .frontend .dorduncu-bolum li {
+  margin-left: 4em;
+  font-weight: bold;
+  font-size: 18px;
+  font-style: italic;
+}
+
+/* abillities frontend end */
+
+/* abillities tasarım start */
+.abilitiess .tasarim {
+  margin-top: 3em;
+}
+
+.abilitiess .tasarim .br-t {
+  display: flex;
+}
+
+.abilitiess .tasarim h2 {
+  font-size: 30px;
+  margin-left: 3em;
+  margin-bottom: 1em;
+}
+
+.abilitiess .tasarim .ilk-bolum {
+  overflow-wrap: break-word; /* Modern tarayıcılar için */
+}
+
+.abilitiess .tasarim .ilk-bolum h3 {
+  font-size: 25px;
+  margin-left: 3em;
+  margin-bottom: 1em;
+}
+
+.abilitiess .tasarim .ilk-bolum .icon1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-left: 6.9em;
+  margin-bottom: 1em;
+}
+
+.abilitiess .tasarim .ilk-bolum li {
+  margin-left: 4em;
+  font-weight: bold;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.abilitiess .tasarim .ikinci-bolum {
+  overflow-wrap: break-word; /* Modern tarayıcılar için */
+}
+
+.abilitiess .tasarim .ikinci-bolum h3 {
+  font-size: 25px;
+  margin-left: 3em;
+  margin-bottom: 1em;
+}
+
+.abilitiess .tasarim .ikinci-bolum .icon2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-left: 6.9em;
+  margin-bottom: 1em;
+}
+
+.abilitiess .tasarim .ikinci-bolum li {
+  margin-left: 4em;
+  font-weight: bold;
+  font-size: 18px;
+  font-style: italic;
+}
+/* abillities tasarım end */
+
+/* abillities beceri start */
+.abilitiess .beceri {
+  margin-top: 3em;
+  margin-bottom: 1em;
+}
+
+.abilitiess .beceri .br-b {
+  display: flex;
+}
+
+.abilitiess .beceri h2 {
+  font-size: 30px;
+  margin-left: 3em;
+  margin-bottom: 1em;
+}
+
+.abilitiess .beceri .ilk-bolum {
+  overflow-wrap: break-word; /* Modern tarayıcılar için */
+}
+
+.abilitiess .beceri .ilk-bolum h3 {
+  font-size: 25px;
+  margin-left: 3em;
+  margin-bottom: 1em;
+}
+
+.abilitiess .beceri .ilk-bolum .icon1 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-left: 6.9em;
+  margin-bottom: 1em;
+}
+
+.abilitiess .beceri .ilk-bolum li {
+  margin-left: 4em;
+  font-weight: bold;
+  font-size: 18px;
+  font-style: italic;
+}
+
+.abilitiess .beceri .ikinci-bolum {
+  overflow-wrap: break-word; /* Modern tarayıcılar için */
+}
+
+.abilitiess .beceri .ikinci-bolum h3 {
+  font-size: 25px;
+  margin-left: 3em;
+  margin-bottom: 1em;
+}
+
+.abilitiess .beceri .ikinci-bolum .icon2 {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-left: 6.9em;
+  margin-bottom: 1em;
+}
+
+.abilitiess .beceri .ikinci-bolum li {
+  margin-left: 4em;
+  font-weight: bold;
+  font-size: 18px;
+  font-style: italic;
+}
+/* abillities tasarım end */
+
+/* abillities hedefim start */
+
+.abilitiess .hedefim {
+  margin-bottom: 1em;
+}
+
+.abilitiess .hedefim h3 {
+  font-size: 30px;
+  margin-left: 3em;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+
+.abilitiess .hedefim li {
+  font-size: 18.7px;
+  font-weight: 600;
+  font-style: italic;
+  margin-left: 6em;
+}
+/* abillities hedefim end */
+/* abillities end */
+
+/* projects start */
+.projects {
+  margin-top: 5em;
+}
+
+.projects h1 {
+  font-size: 60px;
+  margin-left: 10em;
+  margin-bottom: 1em;
+}
+
+/* proje 1 start */
+.projects .yatay1 {
+  display: flex;
+  margin-left: 10em;
+}
+
+.project1 {
+  margin-bottom: 2em;
+}
+
+.project1 img {
+  width: 500px;
+  height: 300px;
+  margin-bottom: 0.5em;
+}
+
+.project1 h3 {
+  font-size: 25px;
+  margin-bottom: 0.5em;
+}
+
+.project1 p,
+.pro1,
+.git {
+  font-size: 16.7px;
+  margin-bottom: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+/* proje 1 end */
+
+/* proje 2 start */
+.project2 {
+  margin-bottom: 2em;
+  margin-left: 6.6em;
+}
+
+.project2 img {
+  width: 500px;
+  margin-bottom: 0.5em;
+  height: 300px;
+}
+
+.project2 h3 {
+  margin-bottom: 0.5em;
+  font-size: 25px;
+}
+
+.project2 p,
+.pro2,
+.git {
+  font-size: 16.7px;
+  margin-bottom: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+/* proje 2 end */
+
+/* proje 3 start */
+.projects .yatay2 {
+  display: flex;
+  margin-left: 10em;
+}
+
+.project3 {
+  margin-bottom: 2em;
+}
+
+.project3 img {
+  width: 500px;
+  margin-bottom: 0.5em;
+  height: 300px;
+}
+
+.project3 h3 {
+  margin-bottom: 0.5em;
+  font-size: 25px;
+}
+
+.project3 p,
+.pro3,
+.git {
+  font-size: 16.7px;
+  margin-bottom: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+/* proje 3 end */
+
+/* proje 4 start */
+.project4 {
+  margin-bottom: 2em;
+  margin-left: 1em;
+}
+
+.project4 img {
+  width: 500px;
+  margin-bottom: 0.5em;
+  height: 300px;
+}
+
+.project4 h3 {
+  margin-bottom: 0.5em;
+  font-size: 25px;
+}
+
+.project4 p,
+.pro4,
+.git {
+  font-size: 16.7px;
+  margin-bottom: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+/* proje 4 end */
+
+/* proje 5 start */
+.projects .yatay3 {
+  display: flex;
+  margin-left: 10em;
+}
+
+.project5 {
+  margin-bottom: 2em;
+}
+
+.project5 img {
+  width: 500px;
+  margin-bottom: 0.5em;
+  height: 300px;
+}
+
+.project5 h3 {
+  margin-bottom: 0.5em;
+  font-size: 25px;
+}
+
+.project5 p,
+.pro5,
+.git {
+  font-size: 16.7px;
+  margin-bottom: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+/* proje 5 end */
+
+/* proje 6 start */
+.project6 {
+  margin-bottom: 2em;
+  margin-left: 9em;
+}
+
+.project6 img {
+  margin-bottom: 0.5em;
+  width: 500px;
+  height: 300px;
+}
+
+.project6 h3 {
+  margin-bottom: 0.5em;
+  font-size: 25px;
+}
+
+.project6 p,
+.pro6,
+.git {
+  font-size: 16.7px;
+  margin-bottom: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+/* proje 6 end */
+
+/* proje 7 start */
+.projects .yatay4 {
+  display: flex;
+  margin-left: 10em;
+}
+
+.project7 {
+  margin-bottom: 2em;
+}
+
+.project7 img {
+  margin-bottom: 0.5em;
+  width: 500px;
+  height: 300px;
+}
+
+.project7 h3 {
+  margin-bottom: 0.5em;
+  font-size: 25px;
+}
+
+.project7 p,
+.pro7,
+.git {
+  font-size: 16.7px;
+  margin-bottom: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+/* proje 7 end */
+
+/* proje 8 start */
+.project8 {
+  margin-bottom: 2em;
+  margin-left: 6.6em;
+}
+
+.project8 img {
+  margin-bottom: 0.5em;
+  width: 500px;
+  height: 300px;
+}
+
+.project8 h3 {
+  margin-bottom: 0.5em;
+  font-size: 25px;
+}
+
+.project8 p,
+.pro8,
+.git {
+  font-size: 16.7px;
+  margin-bottom: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+/* proje 8 end */
+
+/* proje 9 start */
+.project9 {
+  margin-bottom: 2em;
+  margin-left: 29.9em;
+}
+
+.project9 img {
+  margin-bottom: 0.5em;
+  width: 500px;
+  height: 300px;
+}
+
+.project9 h3 {
+  margin-bottom: 0.5em;
+  font-size: 25px;
+}
+
+.project9 p,
+.pro9,
+.git {
+  font-size: 16.7px;
+  margin-bottom: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+/* proje 9 end */
+/* projects end */
+
+/* contacts start */
+.contacts {
+  background-color: rgb(176, 125, 224);
+  margin-top: 2em;
+}
+
+.contacts h2 {
+  color: #fff;
+  font-size: 60px;
+  margin-left: 10em;
+  margin-top: 1em;
+}
+
+.contacts .arka-p {
+  width: 61.9em;
+  margin-left: 1em;
+}
+
+.contacts form {
+  margin-left: 29em;
+}
+
+.contacts form .isim-l {
+  font-size: 35px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.contacts form .isim-t {
+  font-size: 27px;
+  border-radius: 5.9px;
+  border: #fff;
+  margin-left: 1em;
+}
+
+.contacts form .email-l {
+  font-size: 35px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.contacts form .email-t {
+  font-size: 27px;
+  border-radius: 5.9px;
+  border: #fff;
+  margin-left: 2.1em;
+}
+
+.contacts form .konu-l {
+  font-size: 35px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.contacts form .konu-t {
+  font-size: 27px;
+  border-radius: 5.9px;
+  border: #fff;
+  margin-left: 3.2em;
+}
+
+.contacts form .mesaj-l {
+  font-size: 35px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.contacts form .mesaj-t {
+  font-size: 27px;
+  width: 12.2em;
+  border-radius: 5.9px;
+  border: #fff;
+  margin-left: 2.9em;
+}
+
+.contacts form .btn {
+  font-size: 24px;
+  width: 7em;
+  height: 2.5em;
+  background-color: #fff;
+  color: rgb(176, 125, 224);
+  border-radius: 5.9px;
+  border: none;
+  margin-left: 7em;
+  margin-bottom: 1em;
+}
+
+.contacts form .btn:hover {
+  background-color: rgb(176, 125, 224);
+  color: #fff;
+}
+
+.contacts .contact-info {
+  margin-left: 29em;
+}
+
+.contacts .contact-info p {
+  font-size: 30px;
+  font-style: italic;
+}
+/* contacts end */
